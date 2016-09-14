@@ -6,6 +6,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   color: #066677;
+  padding-bottom: 20px;
 }
 
 h1 {
@@ -23,7 +24,8 @@ h2 {
 }
 
 hr {
-  margin: 5px 0px 20px 0px;
+  margin: 0px;
+  margin-top: 5px;
   height: 2px;
   border: none;
   background-color: #b1c2c5;
@@ -38,6 +40,7 @@ hr {
   background-position: center;
   width: 100%;
   height: 300px;
+  margin-top: 20px;
   padding-top: 100px;
 }
 
@@ -49,6 +52,11 @@ hr {
   color: white;
   visibility: hidden;
   text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
+  text-align: center;
+  width: 300px;
+  max-width: 80%;
+  display: block;
+  margin: auto;
 }
 
 .project-thumbnail:hover .project-thumbnail-label {
@@ -61,4 +69,12 @@ hr {
 
 #agricopter-thumbnail {
   background-image: url("../images/drone.jpg");
+}
+
+#doodlemash-thumbnail {
+  background-image: url("../images/doodlemash.jpg");
+}
+
+#hampton-thumbnail {
+  background-image: url("../images/hampton.jpg");
 }
