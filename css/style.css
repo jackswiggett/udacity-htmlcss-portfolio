@@ -36,21 +36,28 @@ hr {
 }
 
 .project-thumbnail {
-  background-size: cover;
-  background-position: center;
   width: 100%;
   height: 300px;
   margin-top: 20px;
+  position: relative;
 }
 
 .project-thumbnail:hover {
   cursor: pointer;
 }
 
+.project-thumbnail-image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
 .project-thumbnail-label {
-  color: white;
+  color: black;
   visibility: hidden;
-  text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
+  /*text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;*/
   text-align: center;
   width: 300px;
   max-width: 75%;
@@ -60,22 +67,28 @@ hr {
   transform: translateY(-50%);
 }
 
+.project-thumbnail:hover .project-thumbnail-image {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  opacity: .5;
+}
+
 .project-thumbnail:hover .project-thumbnail-label {
   visibility: visible;
 }
 
-#grammy-band-thumbnail {
+#grammy-band-image {
   background-image: url("../images/grammyband.jpg");
 }
 
-#agricopter-thumbnail {
+#agricopter-image {
   background-image: url("../images/drone.jpg");
 }
 
-#doodlemash-thumbnail {
+#doodlemash-image {
   background-image: url("../images/doodlemash.jpg");
 }
 
-#hampton-thumbnail {
+#hampton-image {
   background-image: url("../images/hampton.jpg");
 }
